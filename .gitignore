@@ -35,6 +35,7 @@ Thumbs.db
 # Temporary / test artifacts
 coverage/
 .turbo/
+*.tsbuildinfo
 
 # AI and Assistant directories
 .agent/
