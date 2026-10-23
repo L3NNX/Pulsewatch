@@ -4,3 +4,6 @@
 
 - Custom Header Injection: Support for Authorization Bearer and X-Api-Key headers.
 
+
+- Webhook Security: Cryptographic HMAC SHA-256 signature in X-Pulsewatch-Signature header.
+
