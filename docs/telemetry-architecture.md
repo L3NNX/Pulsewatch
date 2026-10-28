@@ -8,3 +8,6 @@
 
 - Stream Decompression: Content-Encoding gzip, deflate, and br automatically decoded without memory buffering.
 
+
+- Concurrency Bounds: Maximum 50 concurrent outgoing probes per worker node to protect network socket limits.
+
