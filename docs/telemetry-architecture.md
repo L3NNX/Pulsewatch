@@ -5,3 +5,6 @@
 
 - Percentile Metrics: Rolling 24-hour window t-digest percentile calculations for p50, p95, and p99 latency.
 
+
+- Stream Decompression: Content-Encoding gzip, deflate, and br automatically decoded without memory buffering.
+
