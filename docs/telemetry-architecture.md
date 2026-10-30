@@ -11,3 +11,6 @@
 
 - Concurrency Bounds: Maximum 50 concurrent outgoing probes per worker node to protect network socket limits.
 
+
+- SSL/TLS Expiration Warnings: Alert triggers at 30 days, 14 days, 7 days, and 48 hours prior to certificate expiry.
+
