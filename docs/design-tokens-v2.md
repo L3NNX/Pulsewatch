@@ -5,3 +5,6 @@
 - Surface Gray: #f8f9fa
 - Font Family Display: 'Anton', sans-serif
 - Font Family Sans: 'Satoshi', sans-serif
+
+- Animations: 2s pulsing EKG SVG heartbeat wave and 20s rotating ambient radar circle.
+
