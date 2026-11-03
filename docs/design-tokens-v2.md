@@ -14,3 +14,6 @@
 
 - Brand Emblem: Standalone squircle container with SVG feGaussianBlur filter and high-contrast stroke.
 
+
+- Accessibility: Semantic title attributes and aria-hidden labels on decorative SVG nodes.
+
