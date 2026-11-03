@@ -11,3 +11,6 @@
 
 - Micro-Interactions: 300ms cubic-bezier transition curves on button hover scale and card elevation.
 
+
+- Brand Emblem: Standalone squircle container with SVG feGaussianBlur filter and high-contrast stroke.
+
