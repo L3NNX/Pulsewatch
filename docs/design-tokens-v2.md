@@ -8,3 +8,6 @@
 
 - Animations: 2s pulsing EKG SVG heartbeat wave and 20s rotating ambient radar circle.
 
+
+- Micro-Interactions: 300ms cubic-bezier transition curves on button hover scale and card elevation.
+
