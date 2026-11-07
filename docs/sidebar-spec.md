@@ -8,3 +8,6 @@
 
 - Shortcut Listener: Global window keydown listener for Ctrl+B / Meta+B.
 
+
+- Collapsed Tooltips: Floating badges with pointer-events-none fade-in when sidebar is 76px wide.
+
