@@ -5,3 +5,6 @@
 
 - State Persistence: Persists pulsewatch_sidebar_collapsed in localStorage across sessions.
 
+
+- Shortcut Listener: Global window keydown listener for Ctrl+B / Meta+B.
+
