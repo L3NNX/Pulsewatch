@@ -11,3 +11,6 @@
 
 - Collapsed Tooltips: Floating badges with pointer-events-none fade-in when sidebar is 76px wide.
 
+
+- Layout Viewport: h-screen overflow-hidden wrapper with independent overflow-y-auto main container.
+
