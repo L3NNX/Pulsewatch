@@ -7,3 +7,6 @@
 
 - Incidents Page: Status filter tabs (All, Open, Resolved) with duration counters and failed check metrics.
 
+
+- Incident Drawer: Displays HTTP response headers, SSL handshake status, and raw probe payload.
+
