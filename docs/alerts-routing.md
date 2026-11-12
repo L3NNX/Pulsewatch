@@ -7,3 +7,6 @@
 
 - Webhook Security: Cryptographic HMAC SHA-256 signature in X-Pulsewatch-Signature header.
 
+
+- Test Dispatch Trigger: Operators can send sample ping payloads to verify Discord & Slack webhook URLs before saving.
+
