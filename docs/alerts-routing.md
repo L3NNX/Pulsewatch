@@ -10,3 +10,6 @@
 
 - Test Dispatch Trigger: Operators can send sample ping payloads to verify Discord & Slack webhook URLs before saving.
 
+
+- Routing Rules: High-severity incidents route immediately to SMS/Slack; low-severity warnings route to email digest.
+
