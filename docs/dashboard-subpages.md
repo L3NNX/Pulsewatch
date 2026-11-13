@@ -10,3 +10,6 @@
 
 - Incident Drawer: Displays HTTP response headers, SSL handshake status, and raw probe payload.
 
+
+- Status Pages Manager: Configure public vanity slugs, toggle public monitor visibility, and copy live URL.
+
