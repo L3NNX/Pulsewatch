@@ -13,3 +13,6 @@
 
 - Status Pages Manager: Configure public vanity slugs, toggle public monitor visibility, and copy live URL.
 
+
+- Developer API Keys: Cryptographic token generation with masked preview and one-click copy.
+
