@@ -16,3 +16,6 @@
 
 - Developer API Keys: Cryptographic token generation with masked preview and one-click copy.
 
+
+- Workspace Danger Zone: Reset telemetry archives or delete account with double confirmation modal.
+
