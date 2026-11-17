@@ -4,3 +4,6 @@
 
 - Brand Logo Routing: Always points to / so operators can return home from within any dashboard subpage.
 
+
+- Console Status Indicator: Animated pulsing green indicator SYSTEM LIVE displayed on all dashboard routes.
+
