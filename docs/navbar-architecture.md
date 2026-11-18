@@ -10,3 +10,6 @@
 
 - Global Session Hook: useQuery(['currentUser']) automatically retrieves active user session from query cache.
 
+
+- Landing Viewport Auth: Returning to landing page displays Dashboard button and account dropdown rather than Login.
+
