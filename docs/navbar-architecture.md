@@ -7,3 +7,6 @@
 
 - Console Status Indicator: Animated pulsing green indicator SYSTEM LIVE displayed on all dashboard routes.
 
+
+- Global Session Hook: useQuery(['currentUser']) automatically retrieves active user session from query cache.
+
