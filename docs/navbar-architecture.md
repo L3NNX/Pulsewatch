@@ -16,3 +16,6 @@
 
 - Anti-Flicker Skeleton: Smooth pill skeleton prevents layout jump while session cookie is verifying on cold page loads.
 
+
+- Mobile Navigation: Full slide-down drawer with profile card, quick links to Dashboard/Settings, and Sign Out.
+
