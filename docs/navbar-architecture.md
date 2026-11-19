@@ -13,3 +13,6 @@
 
 - Landing Viewport Auth: Returning to landing page displays Dashboard button and account dropdown rather than Login.
 
+
+- Anti-Flicker Skeleton: Smooth pill skeleton prevents layout jump while session cookie is verifying on cold page loads.
+
