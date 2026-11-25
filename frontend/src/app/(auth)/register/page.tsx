@@ -84,7 +84,7 @@ export default function RegisterPage() {
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <Input
               label="OPERATOR / TEAM ALIAS"
-              placeholder="e.g. Gaurav Debnath"
+              placeholder="e.g. Alex Rivera"
               error={errors.name?.message}
               {...register('name')}
             />
