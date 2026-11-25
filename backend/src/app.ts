@@ -41,6 +41,9 @@ app.use(cookieParser());
 // Request logger with request ID tracing
 app.use(requestLogger);
 
+// Root health endpoints for Render / external uptime monitors (bypasses /api rate limiter)
+app.use('/', healthRoutes);
+
 // Global API rate limiter
 app.use('/api', apiRateLimiter);
 
