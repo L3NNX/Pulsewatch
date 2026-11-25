@@ -3,12 +3,11 @@ import './globals.css';
 import QueryProvider from '@/components/providers/QueryProvider';
 
 const appUrl =
-  process.env.NEXT_PUBLIC_APP_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+  process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
     : process.env.VERCEL_URL
       ? `https://${process.env.VERCEL_URL}`
-      : 'http://localhost:3000');
+      : 'http://localhost:3000';
 
 export const metadata: Metadata = {
   title: 'PulseWatch | Know Before Your Users Do',
