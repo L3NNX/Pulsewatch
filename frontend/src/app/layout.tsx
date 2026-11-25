@@ -2,13 +2,21 @@ import type { Metadata } from 'next';
 import './globals.css';
 import QueryProvider from '@/components/providers/QueryProvider';
 
+const appUrl =
+  process.env.NEXT_PUBLIC_APP_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : 'http://localhost:3000');
+
 export const metadata: Metadata = {
   title: 'PulseWatch | Know Before Your Users Do',
   description:
     'High-precision uptime monitoring with automated AI postmortems and public status pages for modern SaaS teams.',
   keywords: ['uptime monitoring', 'status page', 'incident management', 'health checks'],
   authors: [{ name: 'PulseWatch' }],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
+  metadataBase: new URL(appUrl),
   openGraph: {
     title: 'PulseWatch | Know Before Your Users Do',
     description: 'Stop relying on angry customer tweets. PulseWatch executes high-precision health checks and writes AI incident postmortems in 2 seconds.',
