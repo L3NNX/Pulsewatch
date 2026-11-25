@@ -3,6 +3,8 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   async rewrites() {
+    // On Vercel: rewrites are handled by vercel.json (this block is ignored)
+    // Locally: proxies /api/* to the Express backend
     const backendUrl = process.env.BACKEND_INTERNAL_URL || 'http://localhost:5000';
     return [
       {
@@ -14,5 +16,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
-// PWA support planned via next-pwa in v1.3
