@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { AlertTriangle, ArrowRight, ShieldCheck, Key } from 'lucide-react';
+import { AlertTriangle, ShieldCheck } from 'lucide-react';
 import { Input } from '@/components/ui/Input';
 import { Button } from '@/components/ui/Button';
 import { api } from '@/lib/api';
@@ -25,7 +25,6 @@ export default function LoginPage() {
   const {
     register,
     handleSubmit,
-    setValue,
     formState: { errors, isSubmitting },
   } = useForm<LoginValues>({
     resolver: zodResolver(loginSchema),
@@ -44,11 +43,6 @@ export default function LoginPage() {
     } catch (err: any) {
       setServerError(err.message || 'Authentication rejected. Verify credentials.');
     }
-  };
-
-  const handleDemoFill = () => {
-    setValue('email', 'demo@pulsewatch.dev');
-    setValue('password', 'demo123456');
   };
 
   return (
@@ -106,18 +100,6 @@ export default function LoginPage() {
               SIGN IN TO CONSOLE →
             </Button>
           </form>
-
-          {/* Quick Demo Fill button */}
-          <div className="pt-4 border-t border-[#171e19]/10">
-            <button
-              type="button"
-              onClick={handleDemoFill}
-              className="w-full py-2.5 px-4 rounded-xl border border-dashed border-[#171e19]/20 bg-[#f8f9fa] text-xs font-satoshi text-[#171e19] hover:bg-[#ffe17c] transition-colors flex items-center justify-center gap-2 font-bold cursor-pointer"
-            >
-              <Key className="h-4 w-4" />
-              AUTO-FILL DEMO CREDENTIALS
-            </button>
-          </div>
         </div>
 
         {/* Footer Link */}
