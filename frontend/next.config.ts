@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
     // Locally: proxies /api/* to the Express backend
     const backendUrl =
       process.env.NEXT_PUBLIC_APP_URL ||
-      process.env.BACKEND_INTERNAL_URL ||
       'http://localhost:5000';
     return [
       {
