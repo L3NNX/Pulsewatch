@@ -44,7 +44,7 @@ export default function DashboardLayout({
     });
   };
 
-  // Keyboard shortcut Ctrl+B / Cmd+B to toggle sidebar
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'b') {
@@ -60,6 +60,7 @@ export default function DashboardLayout({
     queryKey: ['currentUser'],
     queryFn: () => api.getMe(),
     retry: false,
+    staleTime: 5 * 60 * 1000, // 5 minutes — single call per session window
   });
 
   const user = userData?.user;

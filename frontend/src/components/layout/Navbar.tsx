@@ -24,19 +24,22 @@ export function Navbar({ user: propUser }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
-  // Automatically check session if propUser is not explicitly provided
+  const isLandingPage = pathname === '/';
+  const isDashboard = pathname.startsWith('/dashboard');
+
+  // Only fetch session when propUser isn't provided AND we're not on the landing page.
+  // - On dashboard: propUser is passed down from layout (already fetched once).
+  // - On landing/login/register: no session check needed; middleware handles auth guards.
   const { data: userData, isLoading: isUserLoading } = useQuery({
     queryKey: ['currentUser'],
     queryFn: () => api.getMe(),
+    enabled: propUser === undefined && !isLandingPage,
     retry: false,
-    staleTime: 60 * 1000,
+    staleTime: 5 * 60 * 1000, // share the 5-min cache with dashboard/layout
   });
 
   const user = propUser !== undefined ? propUser : userData?.user;
   const isVerifyingSession = propUser === undefined && isUserLoading;
-
-  const isLandingPage = pathname === '/';
-  const isDashboard = pathname.startsWith('/dashboard');
 
   const handleLogout = async () => {
     try {
